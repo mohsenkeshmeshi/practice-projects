@@ -16,7 +16,10 @@ public class main {
 		
 		Consumer<Order> chekVip = order -> {
 			if(order.getAmount() > 1000000) {
-				System.out.println(order+ "Order VIP");
+				System.out.println(order+ "VIP Order");
+			}
+			else {
+				System.out.println(order+ "Normal Order");
 			}
 		};
 		
